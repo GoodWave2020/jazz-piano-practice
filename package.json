@@ -1,0 +1,17 @@
+{
+  "name": "jazz-piano-practice",
+  "version": "1.0.0",
+  "description": "ジャズピアノ習得ロードマップ",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
