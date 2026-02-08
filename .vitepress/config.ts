@@ -46,6 +46,14 @@ export default defineConfig({
         text: "ガイド",
         items: [
           { text: "レッスン戦略", link: "/guides/lesson-strategy" },
+          {
+            text: "コード進行パターン",
+            link: "/guides/chord-progressions",
+          },
+          {
+            text: "スタンダード一覧",
+            link: "/guides/repertoire",
+          },
           { text: "練習ルール", link: "/guides/practice-rules" },
           { text: "推奨リソース", link: "/guides/resources" },
           { text: "楽器アップグレード計画", link: "/guides/equipment" },
@@ -56,6 +64,29 @@ export default defineConfig({
     outline: {
       label: "目次",
       level: [2, 3],
+    },
+
+    search: {
+      provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "検索",
+            buttonAriaLabel: "検索",
+          },
+          modal: {
+            displayDetails: "詳細を表示",
+            resetButtonTitle: "リセット",
+            backButtonTitle: "戻る",
+            noResultsText: "見つかりませんでした",
+            footer: {
+              selectText: "選択",
+              navigateText: "移動",
+              closeText: "閉じる",
+            },
+          },
+        },
+      },
     },
 
     docFooter: {
