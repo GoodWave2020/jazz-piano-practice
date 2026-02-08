@@ -4,6 +4,7 @@ export default defineConfig({
   title: "ジャズピアノ習得ロードマップ",
   description: "ピアノトリオでライブ演奏できるレベルを目指す3〜5年計画",
   lang: "ja-JP",
+  base: process.env.VITEPRESS_BASE || "/",
 
   themeConfig: {
     nav: [
