@@ -52,6 +52,10 @@ export default defineConfig({
             link: "/guides/chord-progressions",
           },
           {
+            text: "イヤートレーニング",
+            link: "/guides/ear-training",
+          },
+          {
             text: "スタンダード一覧",
             link: "/guides/repertoire",
           },
