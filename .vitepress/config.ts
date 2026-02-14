@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "ジャズピアノ習得ロードマップ",
-  description: "ピアノトリオでライブ演奏できるレベルを目指す3〜5年計画",
+  description: "セッションホストとして演奏と進行を担えるレベルを目指す3〜5年計画",
   lang: "ja-JP",
   base: process.env.VITEPRESS_BASE || "/",
 
@@ -38,7 +38,7 @@ export default defineConfig({
             link: "/phases/phase-3-improvisation",
           },
           {
-            text: "Phase 4 - トリオ演奏の総合力",
+            text: "Phase 4 - セッションホスト運営力",
             link: "/phases/phase-4-trio",
           },
         ],
@@ -52,12 +52,28 @@ export default defineConfig({
             link: "/guides/chord-progressions",
           },
           {
+            text: "ボイシングパターン",
+            link: "/guides/voicing-patterns",
+          },
+          {
+            text: "ビバップ特化練習",
+            link: "/guides/bebop-practice",
+          },
+          {
+            text: "ロバート・グラスパー奏法",
+            link: "/guides/glasper-practice",
+          },
+          {
             text: "イヤートレーニング",
             link: "/guides/ear-training",
           },
           {
             text: "スタンダード一覧",
             link: "/guides/repertoire",
+          },
+          {
+            text: "ピアニスト定番奏法",
+            link: "/guides/pianistic-techniques",
           },
           { text: "練習ルール", link: "/guides/practice-rules" },
           { text: "推奨リソース", link: "/guides/resources" },
