@@ -37,6 +37,9 @@
 | ガイド | 内容 |
 |--------|------|
 | [レッスン戦略](guides/lesson-strategy.md) | 先生の選び方・フェーズ別レッスン計画・費用見通し |
+| [即興フレーズ設計](guides/improvisation-phrasing.md) | アルペジオ・スケール・テンション・リックを1つのフレーズへ統合する実践手順 |
+| [アルペジオ練習](guides/arpeggio-practice.md) | スタンダード用/ブルース用のアルペジオドリルをABC譜例付きで整理 |
+| [スケール練習](guides/scale-practice.md) | スタンダード用/ブルース用のスケールドリルをABC譜例付きで整理 |
 | [ボイシングパターン](guides/voicing-patterns.md) | シェル、A/B、テンション追加、セッション実践をフェーズ横断で整理 |
 | [ビバップ特化練習](guides/bebop-practice.md) | クロマチック、着地設計、テンポラダー、曲適用を集中的に鍛える |
 | [ロバート・グラスパー奏法](guides/glasper-practice.md) | モダンな後ノリコンピング、ゴスペル系ボイシング、モチーフ運用を強化 |

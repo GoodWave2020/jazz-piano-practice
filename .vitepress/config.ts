@@ -52,6 +52,18 @@ export default defineConfig({
             link: "/guides/chord-progressions",
           },
           {
+            text: "即興フレーズ設計",
+            link: "/guides/improvisation-phrasing",
+          },
+          {
+            text: "アルペジオ練習",
+            link: "/guides/arpeggio-practice",
+          },
+          {
+            text: "スケール練習",
+            link: "/guides/scale-practice",
+          },
+          {
             text: "ボイシングパターン",
             link: "/guides/voicing-patterns",
           },

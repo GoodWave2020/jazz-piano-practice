@@ -24,27 +24,29 @@
 
 ### ブルース（最優先）
 
+`コード進行の特徴（JSON解析）` の括弧内は検出回数（簡易ルール）を示す。
+
 ジャズセッションの共通言語。「何かブルースやろう」は必ず言われる。
 
-| 曲名 | Key | 小節 | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| Now's the Time | F | 12 | ミディアム | ブルース進行 | 最もシンプルなジャズブルース。最初に覚える1曲 |
-| Billie's Bounce | F | 12 | ミディアム〜アップ | ブルース＋ii-V | Now's the Time と同じキーだが、テーマがバップ的 |
-| Blue Monk | B♭ | 12 | ミディアム | ブルース進行 | B♭ブルースの定番。Monk の独特のメロディ |
+| 曲名 | Key | 小節 | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| Now's the Time | F | 12 | ミディアム | ブルース進行 | ii-V-i(1) + セカンダリー(2) | 最もシンプルなジャズブルース。最初に覚える1曲 |
+| Billie's Bounce | F | 12 | ミディアム〜アップ | ブルース＋ii-V | ii-V-i(1) + セカンダリー(2) | Now's the Time と同じキーだが、テーマがバップ的 |
+| Blue Monk | B♭ | 12 | ミディアム | ブルース進行 | 主要機能進行の検出なし | B♭ブルースの定番。Monk の独特のメロディ |
 
 F ブルースと B♭ブルースの2キーを押さえれば、セッションのブルースはほぼ対応できる。
 
 ### 定番スタンダード
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| Autumn Leaves | Gm (Em) | AABC 32小節 | ミディアム | ii-V-I（メジャー/マイナー） | **最優先**。ほぼ全セッションで演奏される。メジャーii-V-I とマイナーii-V-i の2パターンだけで構成 |
-| Fly Me to the Moon | C | AABA 32小節 | ミディアム〜アップ | ii-V-I の連続 | ii-V-I の練習曲として最適。進行がほぼ ii-V の繰り返し |
-| All of Me | C | ABAC 32小節 | ミディアム | セカンダリードミナント | A7→Dm、E7→Am のセカンダリードミナントが頻出 |
-| Blue Bossa | Cm | 16小節 | ボサノバ | ii-V-i（マイナー）＋転調 | 16小節と短く覚えやすい。Cm→D♭への転調が練習になる |
-| Summertime | Dm (Am) | 16小節 | スロー〜ミディアム | マイナーキー | メロディが簡単。マイナーキーのアドリブ入門 |
-| Satin Doll | C | AABA 32小節 | ミディアム | ii-V の連続、セカンダリードミナント | Dm7-G7、Em7-A7 の ii-V が交互に出現。Ellington の名曲 |
-| C Jam Blues | C | 12 | ミディアム〜アップ | ブルース進行 | テーマが2音だけ。アドリブに集中できるブルース |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| Autumn Leaves | Gm (Em) | AABC 32小節 | ミディアム | ii-V-I（メジャー/マイナー） | ii-V-I(2) + ii-V-i(4) + セカンダリー(7) | **最優先**。ほぼ全セッションで演奏される。メジャーii-V-I とマイナーii-V-i の2パターンだけで構成 |
+| Fly Me to the Moon | C | AABA 32小節 | ミディアム〜アップ | ii-V-I の連続 | ii-V-I(5) + ii-V-i(5) + セカンダリー(12) | ii-V-I の練習曲として最適。進行がほぼ ii-V の繰り返し |
+| All of Me | C | ABAC 32小節 | ミディアム | セカンダリードミナント | ii-V-I(2) + ii-V-i(1) + セカンダリー(6) | A7→Dm、E7→Am のセカンダリードミナントが頻出 |
+| Blue Bossa | Cm | 16小節 | ボサノバ | ii-V-i（マイナー）＋転調 | ii-V-I(1) + ii-V-i(2) + セカンダリー(3) | 16小節と短く覚えやすい。Cm→D♭への転調が練習になる |
+| Summertime | Dm (Am) | 16小節 | スロー〜ミディアム | マイナーキー | ii-V-i(4) + セカンダリー(6) | メロディが簡単。マイナーキーのアドリブ入門 |
+| Satin Doll | C | AABA 32小節 | ミディアム | ii-V の連続、セカンダリードミナント | ii-V-I(1) + セカンダリー(1) | Dm7-G7、Em7-A7 の ii-V が交互に出現。Ellington の名曲 |
+| C Jam Blues | C | 12 | ミディアム〜アップ | ブルース進行 | 主要機能進行の検出なし | テーマが2音だけ。アドリブに集中できるブルース |
 
 ### レベル 1 のチェックリスト
 
@@ -60,40 +62,40 @@ F ブルースと B♭ブルースの2キーを押さえれば、セッション
 
 ### スイング・スタンダード
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| There Will Never Be Another You | E♭ | ABAC 32小節 | ミディアム | ii-V-I、セカンダリードミナント、バックドア | 進行が素直でアドリブしやすい。セッション超定番 |
-| There Is No Greater Love | B♭ | AABA 32小節 | ミディアム | ii-V-I、ターンアラウンド | 覚えやすいメロディ。リラックスしたスイング |
-| Just Friends | F | ABAC 32小節 | ミディアム | ii-V-I、サブドミナントマイナー | メジャーキーの王道。サブドミナントマイナー（iv→I）が体験できる |
-| Take the A Train | C | AABA 32小節 | アップテンポ | ii-V-I | アップテンポの定番。Ellington/Strayhorn |
-| Softly as in a Morning Sunrise | Cm | AABA 32小節 | ミディアム〜アップ | ii-V-i（マイナー） | マイナーキーの定番中の定番。A セクションがほぼ ii-V-i の繰り返し |
-| Days of Wine and Roses | F | AABA 32小節 | ミディアム | ii-V-I、裏コード | 美しいメロディ。裏コードが自然に出てくる |
-| Solar | Cm | 12小節 | ミディアム〜アップ | ii-V-I の連続（複数キー） | Miles Davis。12小節だが転調が多く、ii-V-I の移調練習に最適 |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| There Will Never Be Another You | E♭ | ABAC 32小節 | ミディアム | ii-V-I、セカンダリードミナント、バックドア | ii-V-I(4) + ii-V-i(3) + セカンダリー(7) | 進行が素直でアドリブしやすい。セッション超定番 |
+| There Is No Greater Love | B♭ | AABA 32小節 | ミディアム | ii-V-I、ターンアラウンド | ii-V-I(2) + ii-V-i(3) + セカンダリー(6) | 覚えやすいメロディ。リラックスしたスイング |
+| Just Friends | F | ABAC 32小節 | ミディアム | ii-V-I、サブドミナントマイナー | ii-V-I(3) + ii-V-i(1) + セカンダリー(4) + バックドア(2) | メジャーキーの王道。サブドミナントマイナー（iv→I）が体験できる |
+| Take the A Train | C | AABA 32小節 | アップテンポ | ii-V-I | ii-V-I(4) + セカンダリー(5) | アップテンポの定番。Ellington/Strayhorn |
+| Softly as in a Morning Sunrise | Cm | AABA 32小節 | ミディアム〜アップ | ii-V-i（マイナー） | ii-V-I(1) + ii-V-i(8) + セカンダリー(10) | マイナーキーの定番中の定番。A セクションがほぼ ii-V-i の繰り返し |
+| Days of Wine and Roses | F | AABA 32小節 | ミディアム | ii-V-I、裏コード | ii-V-I(2) + ii-V-i(4) + セカンダリー(6) | 美しいメロディ。裏コードが自然に出てくる |
+| Solar | Cm | 12小節 | ミディアム〜アップ | ii-V-I の連続（複数キー） | ii-V-I(3) + セカンダリー(3) | Miles Davis。12小節だが転調が多く、ii-V-I の移調練習に最適 |
 
 ### バラード
 
 セッションでは必ず1曲はバラードが入る。遅いテンポでごまかしが効かないため、ボイシングとタッチの質が問われる。
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| My Funny Valentine | Cm | AABA 32小節 | バラード | サブドミナントマイナー、クリシェライン | A セクションでベースが半音下行するクリシェが特徴。バラードの入門 |
-| Misty | E♭ | AABA 32小節 | バラード | ii-V-I | Erroll Garner 作。メロディが美しく、ボーカルとの共演でも頻出 |
-| In a Sentimental Mood | F | AABA 32小節 | バラード | サブドミナントマイナー | Ellington。A とB でガラリと雰囲気が変わる |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| My Funny Valentine | Cm | AABA 32小節 | バラード | サブドミナントマイナー、クリシェライン | ii-V-I(2) + ii-V-i(6) + セカンダリー(10) | A セクションでベースが半音下行するクリシェが特徴。バラードの入門 |
+| Misty | E♭ | AABA 32小節 | バラード | ii-V-I | ii-V-I(6) + ii-V-i(2) + ターン(2) + セカンダリー(8) + バックドア(2) | Erroll Garner 作。メロディが美しく、ボーカルとの共演でも頻出 |
+| In a Sentimental Mood | F | AABA 32小節 | バラード | サブドミナントマイナー | ii-V-I(4) + ii-V-i(2) + ターン(2) + セカンダリー(9) | Ellington。A とB でガラリと雰囲気が変わる |
 
 ### ボサノバ / ラテン
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| Recorda Me | Am | 16小節 | ボサノバ | ii-V-I（転調） | Joe Henderson。16小節で覚えやすく、Am→Cm→Am の転調がスムーズ |
-| Girl from Ipanema | F (D♭) | AABA 32小節 | ボサノバ | ii-V-I、裏コード | Jobim の代名詞。B セクションが D♭ に転調しボイシング力が試される |
-| Wave | D | AABA 32小節 | ボサノバ | ii-V-I、バックドア | Jobim。メロディが美しい。バックドア進行が自然に出てくる |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| Recorda Me | Am | 16小節 | ボサノバ | ii-V-I（転調） | ii-V-I(4) + セカンダリー(4) | Joe Henderson。16小節で覚えやすく、Am→Cm→Am の転調がスムーズ |
+| Girl from Ipanema | F (D♭) | AABA 32小節 | ボサノバ | ii-V-I、裏コード | ii-V-I(1) + ii-V-i(1) + セカンダリー(3) | Jobim の代名詞。B セクションが D♭ に転調しボイシング力が試される |
+| Wave | D | AABA 32小節 | ボサノバ | ii-V-I、バックドア | ii-V-I(4) + セカンダリー(7) | Jobim。メロディが美しい。バックドア進行が自然に出てくる |
 
 ### ワルツ（3/4拍子）
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| Someday My Prince Will Come | B♭ | ABAC 32小節 | ワルツ | ii-V-I | 3/4拍子の定番。Miles Davis の名演で有名 |
-| Alice in Wonderland | C | ABAC 32小節 | ワルツ | ii-V-I | Bill Evans の名演。進行はシンプルで弾きやすい |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| Someday My Prince Will Come | B♭ | ABAC 32小節 | ワルツ | ii-V-I | ii-V-I(2) + ターン(1) + セカンダリー(7) | 3/4拍子の定番。Miles Davis の名演で有名 |
+| Alice in Wonderland | C | ABAC 32小節 | ワルツ | ii-V-I | ii-V-I(2) + ii-V-i(3) + セカンダリー(6) | Bill Evans の名演。進行はシンプルで弾きやすい |
 
 ### レベル 2 のチェックリスト
 
@@ -109,36 +111,36 @@ F ブルースと B♭ブルースの2キーを押さえれば、セッション
 
 ### 上級スタンダード（ハーモニーが豊か）
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| All The Things You Are | A♭ | AABA 32小節 | ミディアム | ii-V-I（4つのキーを横断） | ジャズ史上最も有名な曲の一つ。A♭→C→E♭→G♭ と次々に転調 |
-| Stella by Starlight | B♭ | ABCD 32小節 | ミディアム〜バラード | ii-V-I、セカンダリードミナント、バックドア | 全セクション異なる進行。ボイシング力の総合テスト |
-| On Green Dolphin Street | C (E♭) | AABA 32小節 | ミディアム〜アップ | ii-V-I、♭VII 系の借用 | A セクション前半がモーダル、後半が ii-V-I |
-| It Could Happen to You | E♭ | ABAC 32小節 | ミディアム | ii-V-I、クロマチック下行 | セカンダリードミナントが美しく連鎖する |
-| I'll Remember April | G | AABA 48小節 | ミディアム〜アップ | ii-V-I、マイナー→メジャー | 48小節の長いフォーム。覚えるのに時間がかかるがセッション頻出 |
-| Beautiful Love | Dm | ABAC 32小節 | ワルツ or スイング | ii-V-i（マイナー） | マイナーワルツの定番。ワルツ/スイング両方で演奏される |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| All The Things You Are | A♭ | AABA 32小節 | ミディアム | ii-V-I（4つのキーを横断） | ii-V-I(7) + セカンダリー(9) | ジャズ史上最も有名な曲の一つ。A♭→C→E♭→G♭ と次々に転調 |
+| Stella by Starlight | B♭ | ABCD 32小節 | ミディアム〜バラード | ii-V-I、セカンダリードミナント、バックドア | ii-V-I(1) + ii-V-i(1) + セカンダリー(6) + バックドア(1) | 全セクション異なる進行。ボイシング力の総合テスト |
+| On Green Dolphin Street | C (E♭) | AABA 32小節 | ミディアム〜アップ | ii-V-I、♭VII 系の借用 | ii-V-I(4) + ii-V-i(3) + ターン(1) + セカンダリー(9) + 裏コード(3) | A セクション前半がモーダル、後半が ii-V-I |
+| It Could Happen to You | E♭ | ABAC 32小節 | ミディアム | ii-V-I、クロマチック下行 | ii-V-I(3) + ii-V-i(4) + ターン(1) + セカンダリー(10) | セカンダリードミナントが美しく連鎖する |
+| I'll Remember April | G | AABA 48小節 | ミディアム〜アップ | ii-V-I、マイナー→メジャー | ii-V-I(5) + ii-V-i(1) + ターン(1) + セカンダリー(6) | 48小節の長いフォーム。覚えるのに時間がかかるがセッション頻出 |
+| Beautiful Love | Dm | ABAC 32小節 | ワルツ or スイング | ii-V-i（マイナー） | ii-V-I(1) + ii-V-i(3) + セカンダリー(7) | マイナーワルツの定番。ワルツ/スイング両方で演奏される |
 
 ### ビバップ
 
 テーマを正確に弾くテクニックと、速い進行でのアドリブ力が求められる。
 
-| 曲名 | Key | Form | Feel | 主なパターン | ポイント |
-|------|-----|------|------|------------|---------|
-| Confirmation | F | AABA 32小節 | アップ | クロマティック ii-V チェーン | Charlie Parker。ビバップの代表曲。テーマが難しい |
-| Donna Lee | A♭ | ABAC 32小節 | アップ | クロマティック ii-V チェーン | Parker（Miles 作説も）。超高速の ii-V 連続 |
-| Oleo | B♭ | AABA 32小節 | アップ | **Rhythm Changes** | Sonny Rollins。I Got Rhythm の和声に基づく |
-| Blues for Alice | F | 12小節 | ミディアム〜アップ | Bird Blues（ii-V 連鎖ブルース） | Parker。通常のブルース進行に ii-V チェーンを仕込んだ上級ブルース |
-| Four | E♭ | AABA 32小節 | アップ | ii-V-I | Miles Davis。シンプルだがアップテンポでのドライブ感が求められる |
+| 曲名 | Key | Form | Feel | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ------------ | ---------------------------- | --------- |
+| Confirmation | F | AABA 32小節 | アップ | クロマティック ii-V チェーン | ii-V-I(5) + ii-V-i(5) + セカンダリー(10) + 裏コード(2) | Charlie Parker。ビバップの代表曲。テーマが難しい |
+| Donna Lee | A♭ | ABAC 32小節 | アップ | クロマティック ii-V チェーン | ii-V-I(4) + ii-V-i(2) + セカンダリー(8) | Parker（Miles 作説も）。超高速の ii-V 連続 |
+| Oleo | B♭ | AABA 32小節 | アップ | **Rhythm Changes** | ii-V-I(2) + ii-V-i(3) + ターン(2) + セカンダリー(8) | Sonny Rollins。I Got Rhythm の和声に基づく |
+| Blues for Alice | F | 12小節 | ミディアム〜アップ | Bird Blues（ii-V 連鎖ブルース） | ii-V-i(2) + セカンダリー(2) | Parker。通常のブルース進行に ii-V チェーンを仕込んだ上級ブルース |
+| Four | E♭ | AABA 32小節 | アップ | ii-V-I | ii-V-I(3) + セカンダリー(3) + 裏コード(1) + バックドア(2) | Miles Davis。シンプルだがアップテンポでのドライブ感が求められる |
 
 ### Rhythm Changes
 
 **I Got Rhythm（Gershwin）の和声進行**を使った曲群。ジャムセッションで「リズムチェンジやろう」と言われることが非常に多い。
 
-| 曲名 | Key | 特徴 |
-|------|-----|------|
-| Oleo | B♭ | 最もセッションで呼ばれる Rhythm Changes |
-| Anthropology | B♭ | Parker/Gillespie。テーマがユニゾン |
-| Rhythm-a-ning | B♭ | Monk。キャッチーなテーマ |
+| 曲名 | Key | コード進行の特徴（JSON解析） | 特徴 |
+| ------ | ----- | ---------------------------- | ------ |
+| Oleo | B♭ | ii-V-I(2) + ii-V-i(3) + ターン(2) + セカンダリー(8) | 最もセッションで呼ばれる Rhythm Changes |
+| Anthropology | B♭ | ii-V-I(2) + ii-V-i(3) + ターン(2) + セカンダリー(8) | Parker/Gillespie。テーマがユニゾン |
+| Rhythm-a-ning | B♭ | ii-V-I(2) + ターン(4) + セカンダリー(9) | Monk。キャッチーなテーマ |
 
 **Rhythm Changes の構造：**
 - **A セクション**：I-VI-ii-V のターンアラウンドが基本（変形多数）
@@ -147,11 +149,11 @@ F ブルースと B♭ブルースの2キーを押さえれば、セッション
 
 ### 上級バラード
 
-| 曲名 | Key | Form | 主なパターン | ポイント |
-|------|-----|------|------------|---------|
-| Body and Soul | D♭ | AABA 32小節 | ii-V-I、転調 | ジャズバラードの最高峰。B セクションの D に転調する |
-| Round Midnight | E♭m | AABA 32小節 | サブドミナントマイナー、クロマチック | Monk の代表曲。ハーモニーが複雑だが美しい |
-| Alone Together | Dm | AABA 32小節 | ii-V-i（マイナー）、転調 | マイナーキーのバラード。長めのフォーム |
+| 曲名 | Key | Form | 主なパターン | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------------ | ---------------------------- | --------- |
+| Body and Soul | D♭ | AABA 32小節 | ii-V-I、転調 | ii-V-I(6) + ii-V-i(2) + セカンダリー(11) | ジャズバラードの最高峰。B セクションの D に転調する |
+| Round Midnight | E♭m | AABA 32小節 | サブドミナントマイナー、クロマチック | ii-V-I(1) + ii-V-i(2) + セカンダリー(7) + ドミナント連鎖(1) | Monk の代表曲。ハーモニーが複雑だが美しい |
+| Alone Together | Dm | AABA 32小節 | ii-V-i（マイナー）、転調 | ii-V-I(1) + ii-V-i(7) + セカンダリー(12) | マイナーキーのバラード。長めのフォーム |
 
 ### レベル 3 のチェックリスト
 
@@ -166,70 +168,71 @@ F ブルースと B♭ブルースの2キーを押さえれば、セッション
 
 ジャズの深い知識とテクニックが求められる曲。弾けるとセッションで一目置かれる。
 
-| 曲名 | Key | Form | Feel | ポイント |
-|------|-----|------|------|---------|
-| Giant Steps | B | AABA 16小節 | アップ | Coltrane Changes。3つのキーセンターを長3度間隔で移動する。ジャズの試金石 |
-| Moment's Notice | E♭ | AABA 32小節 | アップ | Coltrane。ii-V が矢継ぎ早に転調。Giant Steps ほど極端ではないが十分に難しい |
-| Stablemates | D♭ (B♭) | AABA 32小節 | ミディアム | Benny Golson。独特の和声進行。セッション上級者に人気 |
-| Invitation | Cm | ABCD 32小節 | ミディアム〜アップ | マイナーキーの大曲。テンポを上げると非常にスリリング |
-| Joy Spring | F | AABA 32小節 | アップ | Clifford Brown。明るく美しいメロディだが進行が複雑 |
-| Very Early | E♭ | ABCB 32小節 | ミディアム | Bill Evans。美しいが和声が独特で暗譜が難しい |
-| Nardis | Em | AABA 32小節 | ミディアム | Miles Davis / Bill Evans。モーダルな響き。Evans の名演で有名 |
-| Inner Urge | — | 16小節 | アップ | Joe Henderson。モーダルでフリーに近い。コードが少なくスケール選択が鍵 |
-| Windows | — | 32小節 | ミディアム | Chick Corea。不規則な小節構成と独特の和声 |
-| Woody'n You | D♭ | AABA 32小節 | アップ | Dizzy Gillespie。ビバップの難曲。ii-V の嵐 |
+| 曲名 | Key | Form | Feel | コード進行の特徴（JSON解析） | ポイント |
+| ------ | ----- | ------ | ------ | ---------------------------- | --------- |
+| Giant Steps | B | AABA 16小節 | アップ | ii-V-I(5) + セカンダリー(9) | Coltrane Changes。3つのキーセンターを長3度間隔で移動する。ジャズの試金石 |
+| Moment's Notice | E♭ | AABA 32小節 | アップ | ii-V-I(5) + ii-V-i(2) + セカンダリー(7) + 裏コード(1) | Coltrane。ii-V が矢継ぎ早に転調。Giant Steps ほど極端ではないが十分に難しい |
+| Stablemates | D♭ (B♭) | AABA 32小節 | ミディアム | ii-V-I(6) + ii-V-i(4) + セカンダリー(10) | Benny Golson。独特の和声進行。セッション上級者に人気 |
+| Invitation | Cm | ABCD 32小節 | ミディアム〜アップ | セカンダリー(5) | マイナーキーの大曲。テンポを上げると非常にスリリング |
+| Joy Spring | F | AABA 32小節 | アップ | ii-V-I(12) + セカンダリー(12) | Clifford Brown。明るく美しいメロディだが進行が複雑 |
+| Very Early | E♭ | ABCB 32小節 | ミディアム | ii-V-i(1) + セカンダリー(12) | Bill Evans。美しいが和声が独特で暗譜が難しい |
+| Nardis | Em | AABA 32小節 | ミディアム | ii-V-I(1) + セカンダリー(1) | Miles Davis / Bill Evans。モーダルな響き。Evans の名演で有名 |
+| Inner Urge | — | 16小節 | アップ | 主要機能進行の検出なし | Joe Henderson。モーダルでフリーに近い。コードが少なくスケール選択が鍵 |
+| Windows | — | 32小節 | ミディアム | ii-V-i(1) + セカンダリー(2) + 裏コード(1) | Chick Corea。不規則な小節構成と独特の和声 |
+| Woody'n You | D♭ | AABA 32小節 | アップ | ii-V-I(2) + セカンダリー(8) | Dizzy Gillespie。ビバップの難曲。ii-V の嵐 |
 
 ---
 
 ## ジャンル別クイック索引
 
 セッションで「ブルースやろう」「バラードやろう」と言われたときの即引きリスト。
+`コード進行の特徴（JSON解析）` の括弧内は検出回数（簡易ルール）を示す。
 
 ### ブルース
 
-| 曲名 | Key | 難易度 | 特徴 |
-|------|-----|--------|------|
-| Now's the Time | F | ★ | 最もシンプル |
-| C Jam Blues | C | ★ | テーマが2音だけ |
-| Billie's Bounce | F | ★ | バップ的テーマ |
-| Blue Monk | B♭ | ★ | Monk の名曲 |
-| Bags' Groove | F | ★★ | ミディアムテンポの定番 |
-| Sonnymoon for Two | B♭ | ★★ | Sonny Rollins |
-| Straight, No Chaser | F | ★★ | Monk。テーマのリズムが特徴的 |
-| Blues for Alice | F | ★★★ | Bird Blues（ii-V 連鎖） |
-| Blue in Green | — | ★★★ | Miles/Evans。10小節のモーダルブルース |
+| 曲名 | Key | 難易度 | コード進行の特徴（JSON解析） | 特徴 |
+|------|-----|--------|----------------------------|------|
+| Now's the Time | F | ★ | ブルース基盤 + ii-V-i(1) + セカンダリー(2) | 最もシンプル |
+| C Jam Blues | C | ★ | ブルース原型（主要機能進行の検出なし） | テーマが2音だけ |
+| Billie's Bounce | F | ★ | ブルース基盤 + ii-V-i(1) + セカンダリー(2) | バップ的テーマ |
+| Blue Monk | B♭ | ★ | ブルース原型（主要機能進行の検出なし） | Monk の名曲 |
+| Bags' Groove | F | ★★ | ブルース基盤 + ii-V-i(1) + セカンダリー(2) | ミディアムテンポの定番 |
+| Sonnymoon for Two | B♭ | ★★ | ブルース基盤 + セカンダリー(1) | Sonny Rollins |
+| Straight, No Chaser | F | ★★ | ブルース原型（主要機能進行の検出なし） | Monk。テーマのリズムが特徴的 |
+| Blues for Alice | F | ★★★ | Bird Blues型：ii-V-i(2) + セカンダリー(2) | Bird Blues（ii-V 連鎖） |
+| Blue in Green | — | ★★★ | 10小節系：ii-V-I(1) + セカンダリー(5) | Miles/Evans。10小節のモーダルブルース |
 
 ### バラード
 
-| 曲名 | Key | 難易度 | 特徴 |
-|------|-----|--------|------|
-| My Funny Valentine | Cm | ★★ | クリシェラインが美しい |
-| Misty | E♭ | ★★ | ボーカルとの共演多し |
-| In a Sentimental Mood | F | ★★ | Ellington |
-| Body and Soul | D♭ | ★★★ | バラードの最高峰 |
-| Round Midnight | E♭m | ★★★ | Monk。ハーモニーが複雑 |
-| Naima | E♭ | ★★★ | Coltrane。ペダルポイント |
+| 曲名 | Key | 難易度 | コード進行の特徴（JSON解析） | 特徴 |
+|------|-----|--------|----------------------------|------|
+| My Funny Valentine | Cm | ★★ | ii-V-i(6)中心 + セカンダリー(10) | クリシェラインが美しい |
+| Misty | E♭ | ★★ | ii-V-I(6) + ターンアラウンド(2) + バックドア(2) | ボーカルとの共演多し |
+| In a Sentimental Mood | F | ★★ | ii-V-I(4) / ii-V-i(2) + ターンアラウンド(2) | Ellington |
+| Body and Soul | D♭ | ★★★ | ii-V-I(6) + ii-V-i(2) + セカンダリー(11) | バラードの最高峰 |
+| Round Midnight | E♭m | ★★★ | ii-V-i(2) + セカンダリー(7) + ドミナント連鎖(1) | Monk。ハーモニーが複雑 |
+| Naima | E♭ | ★★★ | モーダル寄り（主要機能進行の検出なし） | Coltrane。ペダルポイント |
 
 ### ボサノバ / ラテン
 
-| 曲名 | Key | 難易度 | 特徴 |
-|------|-----|--------|------|
-| Blue Bossa | Cm | ★ | 16小節。入門に最適 |
-| Recorda Me | Am | ★★ | 16小節。転調あり |
-| Girl from Ipanema | F | ★★ | Jobim の代名詞 |
-| Wave | D | ★★ | Jobim。美メロ |
-| Black Orpheus (Manhã de Carnaval) | Am | ★★ | セッション頻出のボサノバ |
-| St. Thomas | C | ★★ | Sonny Rollins。カリプソ |
-| Song for My Father | Fm | ★★ | Horace Silver。ファンキーラテン |
+| 曲名 | Key | 難易度 | コード進行の特徴（JSON解析） | 特徴 |
+|------|-----|--------|----------------------------|------|
+| Blue Bossa | Cm | ★ | ii-V-i(2)中心 + ii-V-I(1) + セカンダリー(3) | 16小節。入門に最適 |
+| Recorda Me | Am | ★★ | ii-V-I(4)中心 + セカンダリー(4) | 16小節。転調あり |
+| Girl from Ipanema | F | ★★ | ii-V-I(1) / ii-V-i(1) + セカンダリー(3) | Jobim の代名詞 |
+| Wave | D | ★★ | ii-V-I(4)中心 + セカンダリー(7) | Jobim。美メロ |
+| Black Orpheus (Manhã de Carnaval) | Am | ★★ | ii-V-i(9)中心 + セカンダリー(12) + ターン(1) | セッション頻出のボサノバ |
+| St. Thomas | C | ★★ | ii-V-I(3) / ii-V-i(3) + セカンダリー(8) | Sonny Rollins。カリプソ |
+| Song for My Father | Fm | ★★ | モーダル寄り + セカンダリー(2) | Horace Silver。ファンキーラテン |
 
 ### ワルツ（3/4）
 
-| 曲名 | Key | 難易度 | 特徴 |
-|------|-----|--------|------|
-| Someday My Prince Will Come | B♭ | ★★ | Miles Davis 版が有名 |
-| Alice in Wonderland | C | ★★ | Bill Evans |
-| Beautiful Love | Dm | ★★★ | マイナーワルツ |
-| Up Jumped Spring | B♭ | ★★★ | Freddie Hubbard |
+| 曲名 | Key | 難易度 | コード進行の特徴（JSON解析） | 特徴 |
+|------|-----|--------|----------------------------|------|
+| Someday My Prince Will Come | B♭ | ★★ | ii-V-I(2) + ターン(1) + セカンダリー(7) | Miles Davis 版が有名 |
+| Alice in Wonderland | C | ★★ | ii-V-i(3) + ii-V-I(2) + セカンダリー(6) | Bill Evans |
+| Beautiful Love | Dm | ★★★ | ii-V-i(3)中心 + セカンダリー(7) | マイナーワルツ |
+| Up Jumped Spring | B♭ | ★★★ | ii-V-I(2) / ii-V-i(2) + ターン(1) + 裏コード(1) | Freddie Hubbard |
 
 ---
 
@@ -532,3 +535,70 @@ V:2 clef=treble name="Pattern B: 1 only"
 | [Phase 2](/phases/phase-2-vocabulary) | レベル 1〜2 | 10〜15曲 |
 | [Phase 3](/phases/phase-3-improvisation) | レベル 2〜3 | 20〜30曲 |
 | [Phase 4](/phases/phase-4-trio) | レベル 3〜4 | 40〜50曲 |
+
+---
+
+## JSON解析ベース補助索引（JazzStandards）
+
+`JazzStandards/JazzStandards/*.json`（1382曲）を解析し、既存のレパートリー表を補助する索引を追加した。  
+※ 検出ロジックは「簡易ルール（コード根音移動 + コードタイプ）」なので、最終判断は耳と実演で確認すること。
+
+### 進行パターンと対応曲（自動抽出）
+
+**全1382曲中の検出曲数（簡易判定）：**
+
+| パターン | 検出曲数 |
+|----------|---------|
+| ii-V-I（メジャー） | 1003 |
+| ii-V-i（マイナー） | 770 |
+| ターンアラウンド（I-VI-ii-V） | 385 |
+| セカンダリードミナント | 1276 |
+| 裏コード解決（♭II7→I系） | 266 |
+| バックドア（iv-♭VII7-I） | 80 |
+| ドミナント連鎖（サイクル進行） | 79 |
+
+**このガイド掲載曲からの対応例（括弧内は検出回数）：**
+
+| パターン | 対応する曲（例） |
+|----------|-----------------|
+| ii-V-I（メジャー） | Joy Spring (12), All The Things You Are (7), Misty (6), Fly Me To The Moon (5), There Will Never Be Another You (4) |
+| ii-V-i（マイナー） | Softly, As In A Morning Sunrise (8), Alone Together (7), My Funny Valentine (6), Autumn Leaves (4), Summertime (4) |
+| ターンアラウンド（I-VI-ii-V） | Rhythm-a-ning (4), Oleo (2), Anthropology (2), Misty (2), In a Sentimental Mood (2) |
+| セカンダリードミナント | Fly Me To The Moon (12), Alone Together (12), Joy Spring (12), Body And Soul (11), It Could Happen To You (10) |
+| 裏コード解決（♭II7→I系） | On Green Dolphin Street (3), Confirmation (2), Four (1), Moment's Notice (1), Up Jumped Spring (1) |
+| バックドア（iv-♭VII7-I） | Just Friends (2), Misty (2), Four (2), Stella By Starlight (1) |
+| ドミナント連鎖（サイクル進行） | Round Midnight (1) |
+
+### キー別スタンダード（JSON集計）
+
+`Key` が明記されている曲は 1149 曲、`Key` 未記載は 233 曲。
+
+| Key | 曲数（JSON） | このガイド掲載曲の代表例 |
+|-----|-------------|-----------------------|
+| F | 254 | Now's The Time, Billie's Bounce, Days Of Wine And Roses, Confirmation |
+| E♭ | 208 | There Will Never Be Another You, Misty, On Green Dolphin Street, Four |
+| B♭ | 171 | Blue Monk, There Is No Greater Love, Oleo, Anthropology |
+| G | 118 | Just Friends, I'll Remember April, Inner Urge |
+| A♭ | 77 | All The Things You Are, Donna Lee, Naima |
+| Cmin | 55 | Blue Bossa, Softly, As In A Morning Sunrise, Solar, Invitation |
+| Dmin | 40 | In a Sentimental Mood, Beautiful Love, Alone Together |
+| D♭ | 37 | Body And Soul, Stablemates, Woody'n You |
+| Fmin | 36 | Song For My Father |
+| Amin | 27 | Summertime, Recordame, Manha De Carnaval (Black Orpheus) |
+| Gmin | 27 | Autumn Leaves |
+
+### レベル別レパートリー（JSON照合）
+
+既存のレベル1〜4掲載曲をJSONに照合し、Key / Rhythm / 拍子の傾向を整理した。
+
+| レベル | 曲数 | Key傾向（上位） | Rhythm傾向（上位） | 拍子 |
+|-------|-----|----------------|-------------------|------|
+| レベル1 | 10 | —(4), F(2), B♭(1), Gmin(1) | Medium Swing(7), Medium Up Swing(1), Bossa Nova(1), Slow Swing(1) | 4/4のみ |
+| レベル2 | 15 | E♭(3), B♭(2), —(2), Cmin(2) | Medium Swing(5), Ballad(3), Bossa Nova(3), Medium Up Swing(2) | 4/4中心（3/4が2曲） |
+| レベル3 | 16 | B♭(4), E♭(3), A♭(2), Dmin(2) | Up Tempo Swing(6), Medium Swing(5), Medium Up Swing(3), Ballad(2) | 4/4のみ |
+| レベル4 | 10 | E♭(2), D♭(2), Cmin(1), F(1) | Up Tempo Swing(5), Medium Swing(2), Waltz(2), Even 8ths(1) | 4/4中心（3/4が2曲） |
+
+**運用メモ：**
+- レベル1で `Key` が `—` の曲（Fly Me To The Moon, All Of Me, Satin Doll, C-Jam Blues）は、練習キーを先に固定してから進めると暗譜が速い。
+- レベル2で Ballad / Bossa / Waltz が揃うため、実戦前の「スタイル穴埋め」チェックに使える。
+- レベル3以降は B♭ / E♭ 系が増えるため、同キーで複数曲を連続練習すると移調コストを抑えやすい。
