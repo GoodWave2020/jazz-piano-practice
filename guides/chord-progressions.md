@@ -292,6 +292,8 @@ F7 なら `A + E♭`、B♭7 なら `D + A♭` のように、ガイドトーン
 
 Now's the Time, Billie's Bounce, Blue Monk, C Jam Blues, Bags' Groove, Sonnymoon for Two, Straight, No Chaser, Blues for Alice
 
+ブルースでのダブルストップ運用（仕組み + 譜例ドリル）は [ブルース・ダブルストップ実践ガイド](/guides/blues-double-stops) を参照。
+
 ---
 
 ## パターン別：スケール＆テンションの適用

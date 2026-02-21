@@ -227,6 +227,7 @@
 
 - [アルペジオ練習](/guides/arpeggio-practice)
 - [スケール練習](/guides/scale-practice)
+- [ブルース・ダブルストップ](/guides/blues-double-stops)
 - [コード進行パターン](/guides/chord-progressions)
 - [ビバップ特化練習](/guides/bebop-practice)
 - [イヤートレーニング](/guides/ear-training)

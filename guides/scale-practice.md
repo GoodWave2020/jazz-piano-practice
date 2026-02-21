@@ -92,9 +92,67 @@ K:C
 
 ---
 
+## メロディックマイナー追加ドリル
+
+`m6` の着地（例: `Gm6`）では、エオリアンよりメロディックマイナー/ドリアンが噛み合う場面が多い。  
+ここでは「使える状態」にするための最小ドリルを追加する。
+
+### 5. Gメロディックマイナー基礎（m6着地用）
+
+<AbcNotation abc='
+X:1
+T:G Melodic Minor for Gm6
+M:4/4
+L:1/8
+K:C
+"Gm6"G A _B c d e ^f g | g ^f e d c _B A G |
+' />
+
+ポイント:
+- `Gm6` の構成音 `G-Bb-D-E` を含むため、終止で濁りにくい
+- まずは「上行/下行固定」で形を覚える
+
+### 6. マイナー ii-V-i（iをメロディックマイナーで解決）
+
+<AbcNotation abc='
+X:1
+T:Minor ii-V-i with Melodic Minor Resolution
+M:4/4
+L:1/8
+K:C
+"Am7b5"A B c d _e f g _e | "D7alt"d _e f ^f _a _b c _b | "Gm6"g a _b c d e ^f g |
+' />
+
+ルール:
+1. `ii` はロクリアン系、`V` はオルタード、`i` はメロディックマイナーで固定して比較
+2. `i` の `E（6th）` を拍頭に置く練習を追加する
+3. `Autumn Leaves` の `Am7b5-D7-Gm6` にそのまま適用する
+
+### 補助ドリル: ナチュラルマイナー（エオリアン）を使う場面
+
+ナチュラルマイナー（エオリアン）は「使わない」のではなく、**`m7` と `b6` を強調したい場面**で使う。  
+一方 `m6` コードでは、ドリアン/メロディックマイナーの方がコードトーン一致しやすい。
+
+<AbcNotation abc='
+X:1
+T:Aeolian vs Dorian-Melodic Minor (G minor context)
+M:4/4
+L:1/8
+K:C
+"Gm7 (Aeolian)"G A _B c d _e f g | "Gm6 (Dorian)"g f e d c _B A G |
+"Gm(maj line)"G A _B c d e ^f g | "Gm6"g e d c _B A G2 |
+' />
+
+使い分けの目安:
+1. `Gm7` が長く続く: `G Aeolian` を候補にする
+2. `Gm6` が明示される: `G Dorian` または `G melodic minor` を優先
+3. 同じ小節内で `Eb` と `E` を混ぜる場合は、弱拍で短く処理して濁りを管理する
+
+---
+
 ## ブルース用ドリル
 
-### 5. I-IV-V のドミナントスケール運用
+### 7. I-IV-V のドミナントスケール運用
 
 <AbcNotation abc='
 X:1
@@ -111,7 +169,7 @@ K:C
 2. 小節頭は3rdか7thで開始
 3. `12小節` を止まらず通す
 
-### 6. ブルーススケール + コードトーン着地
+### 8. ブルーススケール + コードトーン着地
 
 <AbcNotation abc='
 X:1
@@ -161,7 +219,7 @@ K:C
 |------|------|
 | 4分 | ii-V-I スケール接続（4キー） |
 | 4分 | ii-V-i スケール接続（4キー） |
-| 4分 | V7差し替え（ミクソ→オルタード→コンディミ） |
+| 4分 | V7差し替え + マイナー終止比較（エオリアン/ドリアン/メロディック） |
 | 4分 | ブルースドリル（I-IV-V切替 + ブルーススケール） |
 | 4分 | 曲適用（Autumn Leaves / Blue Bossa / Now's the Time） |
 

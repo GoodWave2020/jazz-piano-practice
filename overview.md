@@ -40,6 +40,7 @@
 | [即興フレーズ設計](/guides/improvisation-phrasing) | アルペジオ・スケール・テンション・リックを1つのフレーズへ統合する実践手順 |
 | [アルペジオ練習](/guides/arpeggio-practice) | スタンダード用/ブルース用のアルペジオドリルをABC譜例付きで整理 |
 | [スケール練習](/guides/scale-practice) | スタンダード用/ブルース用のスケールドリルをABC譜例付きで整理 |
+| [ブルース・ダブルストップ](/guides/blues-double-stops) | ダブルストップの仕組み、12小節配置、コアドリルをブルース実践向けに整理 |
 | [ボイシングパターン](/guides/voicing-patterns) | シェル、A/B、テンション追加、セッション実践をフェーズ横断で整理 |
 | [ビバップ特化練習](/guides/bebop-practice) | クロマチック、着地設計、テンポラダー、曲適用を集中的に鍛える |
 | [ロバート・グラスパー奏法](/guides/glasper-practice) | モダンな後ノリコンピング、ゴスペル系ボイシング、モチーフ運用を強化 |
@@ -47,6 +48,19 @@
 | [練習ルール](/guides/practice-rules) | メトロノームの使い方・録音と振り返り |
 | [推奨リソース](/guides/resources) | アプリ・教本・YouTube チャンネル |
 | [楽器アップグレード計画](/guides/equipment) | フェーズ別の推奨楽器・電子ピアノおすすめ |
+
+## 曲分析
+
+| 分析 | 内容 |
+|------|------|
+| [曲分析一覧](/song-analyses/) | 曲ごとの分析ページを集約。追加時の共通フォーマットも記載 |
+| [Autumn Leaves分析](/song-analyses/autumn-leaves) | 相対調運用、ii-V-I / iiø-V-i、終盤クロマチック接続を実践向けに整理 |
+| [Blue Bossa分析](/song-analyses/blue-bossa) | 16小節フォームでのマイナーiiø-V-iと一時転調を実践向けに整理 |
+| [Just Friends分析](/song-analyses/just-friends) | サブドミナントマイナー、バックドア、ii-V連鎖のセクション接続を実践向けに整理 |
+| [Stablemates分析](/song-analyses/stablemates) | 外側ii-V、#5付きドミナント、ブリッジのドミナント連鎖を実践向けに整理 |
+| [Stella By Starlight分析](/song-analyses/stella-by-starlight) | 借用和音、マイナーii-V連鎖、ドミナント保持からの解決設計を実践向けに整理 |
+| [Wave分析](/song-analyses/wave) | キーセンター移動、slash bass文脈、ドミナント連鎖を実践向けに整理 |
+| [Oleo分析](/song-analyses/oleo) | Rhythm ChangesのA/B構造、ドミナント連鎖、アップテンポ処理を実践向けに整理 |
 
 ---
 
