@@ -40,6 +40,7 @@ const GUIDE_LEARNING_ITEMS = [
 
 const GUIDE_HARMONY_ITEMS = [
   { text: "コード進行パターン", link: "/guides/chord-progressions" },
+  { text: "リハーモナイズ", link: "/guides/reharmonization" },
   { text: "ボイシングパターン", link: "/guides/voicing-patterns" },
   { text: "ピアニスト定番奏法", link: "/guides/pianistic-techniques" },
 ];
@@ -55,16 +56,28 @@ const GUIDE_IMPROVISATION_ITEMS = [
 
 const GUIDE_PRACTICE_ITEMS = [
   { text: "イヤートレーニング", link: "/guides/ear-training" },
+  { text: "12キー練習", link: "/guides/twelve-keys-practice" },
+  { text: "イントロ/アウトロ練習", link: "/guides/intro-outro-practice" },
+  { text: "セッション/ライブ心得", link: "/guides/session-live-mindset" },
   { text: "スタンダード一覧", link: "/guides/repertoire" },
 ];
 
 const SONG_ANALYSIS_ITEMS = [
   { text: "分析一覧", link: "/song-analyses/" },
+  { text: "Tune Up", link: "/song-analyses/tune-up" },
   { text: "Autumn Leaves", link: "/song-analyses/autumn-leaves" },
+  { text: "All The Things You Are", link: "/song-analyses/all-the-things-you-are" },
+  { text: "Bolivia", link: "/song-analyses/bolivia" },
+  { text: "Billie's Bounce", link: "/song-analyses/billies-bounce" },
+  { text: "Blues For Alice", link: "/song-analyses/blues-for-alice" },
   { text: "Blue Bossa", link: "/song-analyses/blue-bossa" },
   { text: "Just Friends", link: "/song-analyses/just-friends" },
   { text: "Stablemates", link: "/song-analyses/stablemates" },
   { text: "Stella By Starlight", link: "/song-analyses/stella-by-starlight" },
+  {
+    text: "There Will Never Be Another You",
+    link: "/song-analyses/there-will-never-be-another-you",
+  },
   { text: "Wave", link: "/song-analyses/wave" },
   { text: "Oleo", link: "/song-analyses/oleo" },
 ];

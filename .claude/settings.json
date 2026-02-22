@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_tabs",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_type",
+      "WebFetch(domain:pianowithjonny.com)",
+      "WebFetch(domain:jazztutorial.com)",
+      "WebFetch(domain:www.pianogroove.com)",
+      "WebFetch(domain:www.freejazzlessons.com)"
+    ]
+  }
+}

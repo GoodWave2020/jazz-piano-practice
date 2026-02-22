@@ -18,7 +18,13 @@
 
 | 曲名 | 形式 | 主な論点 | ページ |
 |------|------|----------|--------|
+| Tune Up | A+Ending（16ユニット） | 連続メジャーii-V-I、キー下降接続、終止/再接続エンディング | [分析を見る](/song-analyses/tune-up) |
 | Autumn Leaves | AABC（32小節） | メジャー/マイナーii-Vの往復、相対調運用、終盤のクロマチック接続 | [分析を見る](/song-analyses/autumn-leaves) |
+| Bolivia | i+A+B（32ユニット） | G7ヴァンプ運用、急速なキーセンター移動、終端オルタード接続 | [分析を見る](/song-analyses/bolivia) |
+| There Will Never Be Another You | ABAC（32ユニット） | マイナーii-V挿入、サブドミナントマイナー接続、終止連鎖 | [分析を見る](/song-analyses/there-will-never-be-another-you) |
+| Billie's Bounce | 12小節ブルース | ジャズブルース骨格、減七経過、9-12小節ターンアラウンド | [分析を見る](/song-analyses/billies-bounce) |
+| Blues For Alice | 12小節（Bird Blues） | 高密度ii-V連鎖、SubV運用、ビバップ終止処理 | [分析を見る](/song-analyses/blues-for-alice) |
+| All The Things You Are | 36ユニット（8+8+8+12） | 多キーセンター移動、借用和音、長い終止連結 | [分析を見る](/song-analyses/all-the-things-you-are) |
 | Just Friends | ABAC（32小節） | サブドミナントマイナー、バックドア、ii-V連鎖のセクション接続 | [分析を見る](/song-analyses/just-friends) |
 | Stablemates | ABA（JSON記法: 36ユニット） | 外側ii-V、#5付きドミナント、ブリッジのドミナント連鎖 | [分析を見る](/song-analyses/stablemates) |
 | Stella By Starlight | A+B+C（32ユニット） | 借用和音、マイナーii-V連鎖、ドミナント保持からの解決設計 | [分析を見る](/song-analyses/stella-by-starlight) |
