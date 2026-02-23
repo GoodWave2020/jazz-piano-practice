@@ -47,6 +47,8 @@
 | [リハーモナイズ](guides/reharmonization.md) | 機能を保った差し替え手順（ダイアトニック置換 / セカンダリー / 裏コード / バックドア）を実践向けに整理 |
 | [ボイシングパターン](guides/voicing-patterns.md) | シェル、A/B、テンション追加、セッション実践をフェーズ横断で整理 |
 | [ビバップ特化練習](guides/bebop-practice.md) | クロマチック、着地設計、テンポラダー、曲適用を集中的に鍛える |
+| [1001 Jazz Licks解析](guides/1001-jazz-licks-analysis.md) | 章別進行、代表リックの語彙傾向、優先語彙化の手順を実譜面ベースで整理 |
+| [1001 Jazz Licks厳選フレーズ](guides/1001-jazz-licks-picked-phrases.md) | 実戦投入しやすい16本を優先度・週次運用付きで整理 |
 | [ロバート・グラスパー奏法](guides/glasper-practice.md) | モダンな後ノリコンピング、ゴスペル系ボイシング、モチーフ運用を強化 |
 | [ピアニスト定番奏法](guides/pianistic-techniques.md) | クロスハンド・オクターブ・ロールドコード等の実践メニュー |
 | [練習ルール](guides/practice-rules.md) | メトロノームの使い方・録音と振り返り |

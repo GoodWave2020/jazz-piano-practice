@@ -51,6 +51,8 @@ const GUIDE_IMPROVISATION_ITEMS = [
   { text: "スケール練習", link: "/guides/scale-practice" },
   { text: "ブルース・ダブルストップ", link: "/guides/blues-double-stops" },
   { text: "ビバップ特化練習", link: "/guides/bebop-practice" },
+  { text: "1001 Jazz Licks解析", link: "/guides/1001-jazz-licks-analysis" },
+  { text: "1001 Jazz Licks厳選フレーズ", link: "/guides/1001-jazz-licks-picked-phrases" },
   { text: "ロバート・グラスパー奏法", link: "/guides/glasper-practice" },
 ];
 
